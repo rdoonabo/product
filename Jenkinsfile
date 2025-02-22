@@ -143,7 +143,7 @@ pipeline {
       steps {
         script {
              imageValidation().call()
-             dockerDeploy ('dev','5232','8232').call()
+             dockerDeploy ('dev','5132','8132').call()
         }
       }
     }
@@ -158,7 +158,7 @@ pipeline {
       steps {
        script {
         imageValidation().call()
-        dockerDeploy ('test','6232','8232').call()
+        dockerDeploy ('test','6132','8132').call()
        }
       }
     }
@@ -173,7 +173,7 @@ pipeline {
       steps {
        script {
         imageValidation().call()
-        dockerDeploy ('prod','7232','8232').call()
+        dockerDeploy ('prod','7132','8132').call()
        }
       }
     }
